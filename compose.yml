@@ -1,0 +1,7 @@
+version: '3.6'
+services:
+  c:
+    build: ./docker/c
+    tty: true
+    volumes:
+      - ./cpp-dev/src:/usr/src:cached
